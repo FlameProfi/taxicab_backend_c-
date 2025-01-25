@@ -249,3 +249,5 @@ C:\Users\PC\Documents\course\course\bin\Debug\net9.0\Microsoft.IdentityModel.Pro
 C:\Users\PC\Documents\course\course\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\PC\Documents\course\course\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\PC\Documents\course\course\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC\Documents\course\course\obj\Debug\net9.0\course.sourcelink.json
+C:\Users\PC\Documents\course\course\bin\Debug\net9.0\BCrypt.Net-Next.dll

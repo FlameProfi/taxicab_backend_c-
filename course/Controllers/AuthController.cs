@@ -4,7 +4,9 @@ using course.DTO.Request;
 using course.DTO.Response;
 using course.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 namespace course.Controllers;
@@ -16,10 +18,11 @@ namespace course.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly AppDbContext _context;
-    
+    private readonly PasswordHasher<User> _passwordHasher;
     public AuthController(AppDbContext context)
     {
         _context = context;
+        _passwordHasher = new PasswordHasher<User>();
     }
 
     [HttpPost]
@@ -34,15 +37,20 @@ public class AuthController : ControllerBase
         if (string.IsNullOrWhiteSpace(request.Password) || request.Password.Length <= 8)
             return BadRequest(new ErrorResponse("Пароль обязательный и должен быть больше 8 символов!"));
 
-        var user = _context.Users
-            .ToList()
-            .FirstOrDefault(x => x.Email == request.Email && x.Password == request.Password);
+        var user = await _context.Users
+            .FirstOrDefaultAsync(x => x.Email == request.Email);
         if (user == null)
+            return Unauthorized(new ErrorResponse("Отправлены неправильные данные"));
+        
+        var checkPass = BCrypt.Net.BCrypt.Verify(request.Password, user.Password);
+        // wtreppas2n@auda.org.au юзер с подходящим паролем под крипт
+        if(!checkPass)
             return Unauthorized(new ErrorResponse("Отправлены неправильные данные"));
         
         var claims = new[]
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id)
+            new Claim(ClaimTypes.Name, user.FullName),
+            new Claim("UserId", user.Id),
         };
         var token = new JwtSecurityToken(
             Constants.Iss,
