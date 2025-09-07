@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vo5AHogulgY=",
+  "dgSpecHash": "eJZDrHAbotE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Documents\\course\\course\\course.csproj",
+  "projectFilePath": "E:\\taxicab_backend_c-\\course\\course.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
