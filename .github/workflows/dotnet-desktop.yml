@@ -1,0 +1,125 @@
+name: Backend CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'backend/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'backend/**'
+
+env:
+  DOTNET_VERSION: '9.0.x'
+  PROJECT_PATH: 'course/course.csproj'
+  TEST_PROJECT_PATH: 'course/course.Tests/course.Tests.csproj'
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: testdb
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Restore dependencies
+      run: |
+        cd backend
+        dotnet restore
+
+    - name: Build project
+      run: |
+        cd backend
+        dotnet build --no-restore --configuration Release
+
+    - name: Run unit tests
+      run: |
+        cd backend
+        dotnet test ${{ env.TEST_PROJECT_PATH }} --no-build --verbosity normal
+
+    - name: Run code coverage
+      run: |
+        cd backend
+        dotnet test ${{ env.TEST_PROJECT_PATH }} --no-build --collect:"XPlat Code Coverage" --results-directory ./TestResults
+
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        directory: ./backend/TestResults/
+        fail_ci_if_error: false
+
+    - name: Publish application
+      if: github.ref == 'refs/heads/main'
+      run: |
+        cd backend
+        dotnet publish ${{ env.PROJECT_PATH }} --no-build --configuration Release --output ./publish
+
+    - name: Upload artifact
+      if: github.ref == 'refs/heads/main'
+      uses: actions/upload-artifact@v3
+      with:
+        name: backend-app
+        path: ./backend/publish/
+
+  deploy-to-staging:
+    name: Deploy to Staging
+    needs: build-and-test
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: backend-app
+
+    - name: Deploy to Staging (Example with SSH)
+      run: |
+        echo "Deploying to staging environment..."
+
+  deploy-to-production:
+    name: Deploy to Production
+    needs: build-and-test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: backend-app
+
+    - name: Deploy to Production (Example with SSH)
+      run: |
+        echo "Deploying to production environment..."
+
+    - name: Send notification on success
+      if: success()
+      run: |
+        echo "✅ Deployment to production successful!"
+
+    - name: Send notification on failure
+      if: failure()
+      run: |
+        echo "❌ Deployment to production failed!"
