@@ -7,7 +7,7 @@ namespace course.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TaxiCallsController : BaseController
+    public class TaxiCallsController : ControllerBase
     {
         private readonly TaxiDbContext _context;
 
@@ -25,7 +25,7 @@ namespace course.Controllers
 
                 if (!string.IsNullOrEmpty(status))
                 {
-                    query = query.Where(c => c.Status.ToString().ToLower() == status.ToLower());
+                    query = query.Where(c => c.Status.ToLower() == status.ToLower());
                 }
 
                 var calls = await query
@@ -94,6 +94,11 @@ namespace course.Controllers
                 call.CreatedAt = DateTime.UtcNow;
                 call.UpdatedAt = DateTime.UtcNow;
 
+                if (string.IsNullOrEmpty(call.Status))
+                {
+                    call.Status = "pending";
+                }
+
                 _context.TaxiCalls.Add(call);
                 await _context.SaveChangesAsync();
 
@@ -130,7 +135,7 @@ namespace course.Controllers
                 existingCall.ClientPhone = call.ClientPhone;
                 existingCall.PickupAddress = call.PickupAddress;
                 existingCall.DestinationAddress = call.DestinationAddress;
-                existingCall.Status = call.Status;
+                existingCall.Status = call.Status ?? "pending";
                 existingCall.DriverName = call.DriverName;
                 existingCall.CarModel = call.CarModel;
                 existingCall.CarNumber = call.CarNumber;
@@ -162,7 +167,7 @@ namespace course.Controllers
                     return NotFound(new { message = "Вызов не найден" });
                 }
 
-                call.Status = statusUpdate.Status;
+                call.Status = statusUpdate.Status.ToString().ToLower();
                 call.UpdatedAt = DateTime.UtcNow;
 
                 if (statusUpdate.Status == CallStatus.Completed && statusUpdate.Price.HasValue)

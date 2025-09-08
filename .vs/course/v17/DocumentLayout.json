@@ -3,8 +3,68 @@
   "WorkspaceRootPath": "E:\\taxicab_backend_c-\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\course.tests\\controllers\\carscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\course.tests\\controllers\\carscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\course.tests\\models\\usermodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\course.tests\\models\\usermodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\taxicallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\taxicallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\callstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\callstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\taxicall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\taxicall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,52 +79,20 @@
       "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\taxicallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\taxicallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\driverapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\driverapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\taxicall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\taxicall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|e:\\taxicab_backend_c-\\course\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF8CD08-34E1-4D0E-B28E-5F1A7F625885}|course\\course.csproj|solutionrelative:course\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,11 +102,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserModelTests.cs",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\course.Tests\\Models\\UserModelTests.cs",
+              "RelativeDocumentMoniker": "course\\course.Tests\\Models\\UserModelTests.cs",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\course.Tests\\Models\\UserModelTests.cs",
+              "RelativeToolTip": "course\\course.Tests\\Models\\UserModelTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:43:31.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarsControllerTests.cs",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\course.Tests\\Controllers\\CarsControllerTests.cs",
+              "RelativeDocumentMoniker": "course\\course.Tests\\Controllers\\CarsControllerTests.cs",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\course.Tests\\Controllers\\CarsControllerTests.cs",
+              "RelativeToolTip": "course\\course.Tests\\Controllers\\CarsControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:41:49.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\README.md",
+              "RelativeDocumentMoniker": "course\\README.md",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\README.md",
+              "RelativeToolTip": "course\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-09-08T12:14:52.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "course\\Services\\AuthService.cs",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\Services\\AuthService.cs",
+              "RelativeToolTip": "course\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T10:35:49.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "course\\Models\\LoginRequest.cs",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "course\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T10:35:11.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\User.cs",
+              "RelativeDocumentMoniker": "course\\Models\\User.cs",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\Models\\User.cs",
+              "RelativeToolTip": "course\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T10:34:40.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "DriverApplicationsController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\DriverApplicationsController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\DriverApplicationsController.cs",
@@ -86,25 +192,24 @@
               "RelativeToolTip": "course\\Controllers\\DriverApplicationsController.cs",
               "ViewState": "AgIAAIcAAAAAAAAAAAAmwJ0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T21:31:08.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T21:31:08.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "TaxiCallsController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\TaxiCallsController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\TaxiCallsController.cs",
               "ToolTip": "E:\\taxicab_backend_c-\\course\\Controllers\\TaxiCallsController.cs",
               "RelativeToolTip": "course\\Controllers\\TaxiCallsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T21:29:55.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\EmployeesController.cs",
@@ -112,25 +217,50 @@
               "RelativeToolTip": "course\\Controllers\\EmployeesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T21:29:20.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T21:29:20.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "CarsController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\CarsController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\CarsController.cs",
               "ToolTip": "E:\\taxicab_backend_c-\\course\\Controllers\\CarsController.cs",
               "RelativeToolTip": "course\\Controllers\\CarsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T21:27:37.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\appsettings.json",
+              "RelativeDocumentMoniker": "course\\appsettings.json",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\appsettings.json",
+              "RelativeToolTip": "course\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-07T21:08:20.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CallStatus.cs",
+              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\CallStatus.cs",
+              "RelativeDocumentMoniker": "course\\Models\\CallStatus.cs",
+              "ToolTip": "E:\\taxicab_backend_c-\\course\\Models\\CallStatus.cs",
+              "RelativeToolTip": "course\\Models\\CallStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T10:30:00.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "BaseController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\BaseController.cs",
@@ -138,12 +268,11 @@
               "RelativeToolTip": "course\\Controllers\\BaseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T21:27:24.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T21:27:24.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "HealthController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\HealthController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\HealthController.cs",
@@ -151,12 +280,11 @@
               "RelativeToolTip": "course\\Controllers\\HealthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T21:18:22.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T21:18:22.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
               "Title": "NewsController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\NewsController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\NewsController.cs",
@@ -164,64 +292,50 @@
               "RelativeToolTip": "course\\Controllers\\NewsController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAUwDAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T21:18:08.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T21:18:08.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "course\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\taxicab_backend_c-\\course\\Controllers\\AuthController.cs",
               "RelativeToolTip": "course\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwC8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T21:17:45.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\docker-compose.yml",
               "RelativeDocumentMoniker": "course\\docker-compose.yml",
               "ToolTip": "E:\\taxicab_backend_c-\\course\\docker-compose.yml",
               "RelativeToolTip": "course\\docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2025-09-07T21:11:10.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\appsettings.json",
-              "RelativeDocumentMoniker": "course\\appsettings.json",
-              "ToolTip": "E:\\taxicab_backend_c-\\course\\appsettings.json",
-              "RelativeToolTip": "course\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-07T21:08:20.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "TaxiDbContext.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\TaxiDbContext.cs",
               "RelativeDocumentMoniker": "course\\Models\\TaxiDbContext.cs",
               "ToolTip": "E:\\taxicab_backend_c-\\course\\Models\\TaxiDbContext.cs",
               "RelativeToolTip": "course\\Models\\TaxiDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T21:06:26.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "DriverApplication.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\DriverApplication.cs",
               "RelativeDocumentMoniker": "course\\Models\\DriverApplication.cs",
@@ -229,25 +343,24 @@
               "RelativeToolTip": "course\\Models\\DriverApplication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T21:06:12.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T21:06:12.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "TaxiCall.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\TaxiCall.cs",
               "RelativeDocumentMoniker": "course\\Models\\TaxiCall.cs",
               "ToolTip": "E:\\taxicab_backend_c-\\course\\Models\\TaxiCall.cs",
               "RelativeToolTip": "course\\Models\\TaxiCall.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T21:05:57.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "course\\Models\\Employee.cs",
@@ -255,12 +368,11 @@
               "RelativeToolTip": "course\\Models\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T21:05:43.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T21:05:43.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "Car.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Models\\Car.cs",
               "RelativeDocumentMoniker": "course\\Models\\Car.cs",
@@ -273,13 +385,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\taxicab_backend_c-\\course\\Program.cs",
               "RelativeDocumentMoniker": "course\\Program.cs",
               "ToolTip": "E:\\taxicab_backend_c-\\course\\Program.cs",
               "RelativeToolTip": "course\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwDsAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T21:03:22.504Z",
               "EditorCaption": ""

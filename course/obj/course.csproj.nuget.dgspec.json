@@ -80,6 +80,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.3, )"
@@ -87,6 +91,22 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "xunit.abstractions": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.9.3, )"
             }
           },
           "imports": [

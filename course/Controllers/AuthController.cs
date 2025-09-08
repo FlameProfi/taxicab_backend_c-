@@ -1,73 +1,128 @@
-﻿//using System.IdentityModel.Tokens.Jwt;
-//using System.Security.Claims;
-//using course.DTO.Request;
-//using course.DTO.Response;
-//using course.Models;
-//using Microsoft.AspNetCore.Authorization;
-//using Microsoft.AspNetCore.Mvc;
-//using Microsoft.EntityFrameworkCore;
-//using Microsoft.IdentityModel.Tokens;
+﻿using course.Models;
+using course.Services;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-//namespace course.Controllers;
+namespace course.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AuthController : ControllerBase
+    {
+        private readonly IAuthService _authService;
+        private readonly TaxiDbContext _context; 
 
-//[ApiController]
-//[Route("api/[controller]")]
-//[AllowAnonymous]
+        public AuthController(IAuthService authService, TaxiDbContext context)
+        {
+            _authService = authService;
+            _context = context;
+        }
 
-//public class AuthController : ControllerBase
-//{
-//    private readonly AppDbContext _context;
-//    public AuthController(AppDbContext context)
-//    {
-//        _context = context;
-//    }
+        [HttpPost("login")]
+        public async Task<ActionResult<LoginResponse>> Login([FromBody] LoginRequest request)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
+                {
+                    return BadRequest(new { message = "Имя пользователя и пароль обязательны" });
+                }
 
-//    [HttpPost]
-//    [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-//    [ProducesResponseType(StatusCodes.Status400BadRequest)]
-//    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-//    public async Task<IActionResult> Post([FromBody] SignInRequest request)
-//    {
-//        if (string.IsNullOrWhiteSpace(request.Email))
-//            return BadRequest(new ErrorResponse("Почта обязательна!"));
+                var user = await _authService.AuthenticateUser(request.Username, request.Password);
 
-//        if (string.IsNullOrWhiteSpace(request.Password) || request.Password.Length <= 8)
-//            return BadRequest(new ErrorResponse("Пароль обязательный и должен быть больше 8 символов!"));
+                if (user == null)
+                {
+                    return Unauthorized(new { message = "Неверное имя пользователя или пароль" });
+                }
 
-//        var user = await _context.Users
-//            .FirstOrDefaultAsync(x => x.Email == request.Email);
-//        if (user == null)
-//            return Unauthorized(new ErrorResponse("Отправлены неправильные данные"));
-        
-//        var checkPass = BCrypt.Net.BCrypt.Verify(request.Password, user.Password);
-//        // wtreppas2n@auda.org.au юзер с подходящим паролем под крипт
-//        if(!checkPass)
-//            return Unauthorized(new ErrorResponse("Отправлены неправильные данные"));
-        
-//        var claims = new[]
-//        {
-//            new Claim(ClaimTypes.Name, user.FullName),
-//            new Claim("UserId", user.Id),
-//        };
-//        var token = new JwtSecurityToken(
-//            Constants.Iss,
-//            Constants.Aud,
-//            claims,
-//            null,
-//            DateTime.Now.AddDays(7),
-//            new SigningCredentials(Constants.SymmetricSecurityKey, SecurityAlgorithms.HmacSha256)
-//        );
-        
-//        return Ok(new SignInResponse()
-//        {
-//            Token = new JwtSecurityTokenHandler().WriteToken(token),
-//            User = new UserResponse()
-//            {
-//                Id = user.Id,
-//                Email = user.Email,
-//                Fullname = user.FullName,
-//            }
-            
-//        });
-//    }
-//}
+                var token = _authService.GenerateToken(user);
+
+                var response = new LoginResponse
+                {
+                    Token = token,
+                    User = new User
+                    {
+                        Id = user.Id,
+                        Username = user.Username,
+                        Email = user.Email,
+                        Role = user.Role,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        Phone = user.Phone,
+                        IsActive = user.IsActive
+                    },
+                    ExpiresAt = DateTime.UtcNow.AddDays(7)
+                };
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Ошибка при входе: {ex.Message}" });
+            }
+        }
+
+        [HttpPost("register")]
+        public async Task<ActionResult<User>> Register([FromBody] RegisterRequest request)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var user = await _authService.RegisterUser(request);
+
+                return CreatedAtAction(nameof(Register), new { id = user.Id }, user);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Ошибка при регистрации: {ex.Message}" });
+            }
+        }
+
+        [HttpGet("me")]
+        public async Task<ActionResult<User>> GetCurrentUser()
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var username = User.FindFirst(ClaimTypes.Name)?.Value;
+                var email = User.FindFirst(ClaimTypes.Email)?.Value;
+                var role = User.FindFirst(ClaimTypes.Role)?.Value;
+
+                if (userId == null)
+                {
+                    return Unauthorized(new { message = "Пользователь не авторизован" });
+                }
+
+                var user = await _context.Users.FindAsync(int.Parse(userId));
+                if (user == null)
+                {
+                    return NotFound(new { message = "Пользователь не найден" });
+                }
+
+                var userInfo = new User
+                {
+                    Id = user.Id,
+                    Username = user.Username,
+                    Email = user.Email,
+                    Role = user.Role,
+                    FirstName = user.FirstName ?? "",
+                    LastName = user.LastName ?? "",
+                    Phone = user.Phone,
+                    IsActive = user.IsActive
+                };
+
+                return Ok(userInfo);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Ошибка при получении данных пользователя: {ex.Message}" });
+            }
+        }
+    }
+}

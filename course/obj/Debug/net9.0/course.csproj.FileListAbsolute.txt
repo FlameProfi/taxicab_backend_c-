@@ -510,7 +510,15 @@ E:\taxicab_backend_c-\course\obj\Debug\net9.0\staticwebassets\msbuild.build.cour
 E:\taxicab_backend_c-\course\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.course.props
 E:\taxicab_backend_c-\course\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.course.props
 E:\taxicab_backend_c-\course\obj\Debug\net9.0\staticwebassets.pack.json
-E:\taxicab_backend_c-\course\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\taxicab_backend_c-\course\obj\Debug\net9.0\course.csproj.Up2Date
 E:\taxicab_backend_c-\course\obj\Debug\net9.0\course.genruntimeconfig.cache
 E:\taxicab_backend_c-\course\obj\Debug\net9.0\ref\course.dll
+E:\taxicab_backend_c-\course\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\course.Tests\obj\course.Tests.csproj.nuget.dgspec.json
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\course.Tests\obj\project.assets.json
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\Castle.Core.dll
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\Moq.dll
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\xunit.abstractions.dll
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\xunit.assert.dll
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\xunit.core.dll
+E:\taxicab_backend_c-\course\bin\Debug\net9.0\xunit.execution.dotnet.dll

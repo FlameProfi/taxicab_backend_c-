@@ -13,6 +13,7 @@ namespace course.Models
         public DbSet<Employee> Employees { get; set; }
         public DbSet<TaxiCall> TaxiCalls { get; set; }
         public DbSet<DriverApplication> DriverApplications { get; set; }
+        public DbSet<User> Users { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -33,6 +34,9 @@ namespace course.Models
                 entity.HasIndex(e => e.CallTime);
                 entity.HasIndex(e => e.Status);
                 entity.HasIndex(e => e.ClientName);
+
+                entity.Property(e => e.Status)
+                    .HasMaxLength(20);
             });
 
             modelBuilder.Entity<DriverApplication>(entity =>
@@ -40,6 +44,13 @@ namespace course.Models
                 entity.HasIndex(e => e.Phone);
                 entity.HasIndex(e => e.Status);
                 entity.HasIndex(e => e.CreatedAt);
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasIndex(e => e.Username).IsUnique();
+                entity.HasIndex(e => e.Email).IsUnique();
+                entity.Property(e => e.Role).HasConversion<string>();
             });
 
             base.OnModelCreating(modelBuilder);
@@ -61,7 +72,7 @@ namespace course.Models
         {
             var entries = ChangeTracker.Entries()
                 .Where(e => e.Entity is Car || e.Entity is Employee ||
-                           e.Entity is TaxiCall || e.Entity is DriverApplication)
+                           e.Entity is TaxiCall || e.Entity is DriverApplication || e.Entity is User) 
                 .Where(e => e.State == EntityState.Modified);
 
             foreach (var entry in entries)
@@ -74,6 +85,8 @@ namespace course.Models
                     taxiCall.UpdatedAt = DateTime.UtcNow;
                 else if (entry.Entity is DriverApplication application)
                     application.UpdatedAt = DateTime.UtcNow;
+                else if (entry.Entity is User user) 
+                    user.UpdatedAt = DateTime.UtcNow;
             }
         }
     }

@@ -3,15 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace course.Models
 {
-    public enum CallStatus
-    {
-        Pending,
-        Accepted,
-        Completed,
-        Cancelled,
-        NoAnswer
-    }
-
     [Table("taxi_calls")]
     public class TaxiCall
     {
@@ -40,7 +31,8 @@ namespace course.Models
         public string DestinationAddress { get; set; } = string.Empty;
 
         [Column("status")]
-        public CallStatus Status { get; set; }
+        [MaxLength(20)]
+        public string Status { get; set; } = "pending"; 
 
         [Column("driver_name")]
         [MaxLength(200)]
@@ -64,7 +56,7 @@ namespace course.Models
         public decimal? Distance { get; set; } // в км
 
         [Column("rating")]
-        public int? Rating { get; set; } // от 1 до 5
+        public int? Rating { get; set; } 
 
         [Column("notes")]
         [MaxLength(1000)]
